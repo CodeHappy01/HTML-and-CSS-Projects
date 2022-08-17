@@ -1,0 +1,8 @@
+p {
+	color: aqua;
+	background-color: DimGrey;
+	font-size: 100px;
+	text-align: center;
+	font-family:lucida handwriting;
+	text-shadow: 4px 2px 5px blue, 8px 4px 5px white; 
+}

@@ -1,0 +1,23 @@
+h1 {
+	font-family: Courier New;
+	color: brown;
+}
+table {
+	border: 2px solid silver;
+}
+td:hover {
+	background-color: yellow;
+	color:black;
+}
+tr, th {
+	background-color: brown;
+	color: white;
+	font-family: Courier New;
+}
+tr, td {
+	background-color:LightSlateGrey;
+	color:white;
+	font-family: Courier New;
+}
+	
+	
