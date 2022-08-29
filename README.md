@@ -1,3 +1,17 @@
 # HTML-and-CSS-Projects
 ## Introduction
 This repository is for my HTML and CSS projects for The Tech Academy HTML and CSS Course.
+## Projects:
+* Movie Theater Site
+* Space Staion Site
+* Battle Station's Site
+* Portfolio
+
+## Movie Theater Site
+This page is an example home page for a Movie theater that is styled using Bootstrap 4. It contains many Boostrap components including but not limited to a navbar, jumbotron, form, cards, and dropdowns.
+## Space Staion Site
+This Page is an example of a Space travel company. It's styled using CSS and contains a navbar, image containers, and a form.
+## Battle Station's Site
+Similar to the Space Station Site, it's styled using CSS and contains a navbar, gallery and a contact form. However, this site is an example of a computer setup styling company.
+## Portfolio Site
+This is my Portfolio to showcase a little about what who I am and what skills I hold as a software developer with a contact form.
