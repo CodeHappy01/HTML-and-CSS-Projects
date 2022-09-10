@@ -64,20 +64,6 @@
     height: 169px;
 }
 
-.photo-overlay {
-    color: #ff0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    justify-content: center; /*For centering text inside .photo-overlay */
-    align-items: center;
-    background: rgba(0, 0, 0, .5)
-}
-
 .white-head {
     color: #C9BDAA;
     margin-top: 5%;
@@ -87,7 +73,7 @@
     VIDEO SECTION
 ---------------------------------------*/
 
-.photo-container iframe {
+.photo-container video {
     max-width: 100%;
     width: 300px;
     height: 169px;
@@ -96,17 +82,6 @@
 /*---------------------------------------
     Photo Overlay Transitions
 ---------------------------------------*/
-
-.photo-overlay {
-    opacity: 0;
-    transition: opacity .5s;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.photo-overlay:hover {
-    opacity: 1;
-}
 
 .photo img {
     transition: transform .5s;

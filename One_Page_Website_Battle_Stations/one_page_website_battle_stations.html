@@ -5,6 +5,7 @@
 		<title>Battle Stations| Setup</title>
 		<link rel="stylesheet" href="./css/shared.css">
 		<link rel="stylesheet" href="./css/animations.css">
+		<script src="./JS/one_page_website.js"></script>
 	</head>
 
 	<body>
@@ -40,11 +41,7 @@
 					<!--PHOTO-CONTAINER 1-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_1.png" alt="">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>We make your dream PC station setups come to life, contact us for an appointment today!</p>
-							</div>
+							<img src="./images/thumb/thumbnail_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="">
 						</div>
 					</div>
 					<!-- END PHOTO-CONTAINER 1-->
@@ -52,11 +49,7 @@
 					<!--PHOTO-CONTAINER 2 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_2.png" alt="">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>We make your dream PC station setups come to life, contact us for an appointment today!</p>
-							</div>
+							<img src="./images/thumb/thumbnail_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="">					
 						</div>
 					</div>
 					<!-- END PHOTO-CONTAINER 2-->
@@ -64,11 +57,7 @@
 					<!--PHOTO-CONTAINER 3 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_3.png" alt="">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>We make your dream PC station setups come to life, contact us for an appointment today!</p>
-							</div>
+							<img src="./images/thumb/thumbnail_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="">
 						</div>
 					</div>
 					<!-- END PHOTO-CONTAINER 3-->
@@ -76,11 +65,7 @@
 					<!--PHOTO-CONTAINER 4 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_4.png" alt="">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>We make your dream PC station setups come to life, contact us for an appointment today!</p>
-							</div>
+							<img src="./images/thumb/thumbnail_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="">
 						</div>
 					</div>
 					<!-- END PHOTO-CONTAINER 4-->
@@ -90,7 +75,7 @@
 						<div class="photo">
 							
 							<!--VIDEOS-->
-						<iframe src="./videos/gaming_setup.mp4" title="Video preview" ></iframe>
+						<video muted autoplay loop src="./videos/gaming_setup.mp4" title="Video preview" onclick="openModal();currentSlide(5)" class="hover-shadow" ></video>
 							
 							<!--END VIDEOS-->
 						</div>
@@ -100,11 +85,7 @@
 					<!--PHOTO-CONTAINER 6 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_6.png" alt="">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>We make your dream PC station setups come to life, contact us for an appointment today!</p>
-							</div>
+							<img src="./images/thumb/thumbnail_6.png" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="">
 						</div>
 					</div>
 					<!-- END PHOTO-CONTAINER 6-->
@@ -112,11 +93,7 @@
 					<!--PHOTO-CONTAINER 7 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_7.png" alt="">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>We make your dream PC station setups come to life, contact us for an appointment today!</p>
-							</div>
+							<img src="./images/thumb/thumbnail_7.png" onclick="openModal();currentSlide(7)" class="hover-shadow" alt="">
 						</div>
 					</div>
 					<!-- END PHOTO-CONTAINER 7-->
@@ -124,11 +101,7 @@
 					<!--PHOTO-CONTAINER 8 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_8.png" alt="">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>We make your dream PC station setups come to life, contact us for an appointment today!</p>
-							</div>
+							<img src="./images/thumb/thumbnail_8.png" onclick="openModal();currentSlide(8)" class="hover-shadow" alt="">
 						</div>
 					</div>
 					<!-- END PHOTO-CONTAINER 8-->
@@ -136,11 +109,7 @@
 					<!--PHOTO-CONTAINER 9 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_9.png" alt="">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>We make your dream PC station setups come to life, contact us for an appointment today!</p>
-							</div>
+							<img src="./images/thumb/thumbnail_9.png" onclick="openModal();currentSlide(9)" class="hover-shadow" alt="">
 						</div>
 					</div>
 					<!-- END PHOTO-CONTAINER 9-->
@@ -149,6 +118,95 @@
 			</div>
 		</section>
 		<!-- END GALLERY-->
+
+		<!--LIGHTBOX-->
+
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		  
+			  <div class="mySlides">
+				<div class="numbertext">1 / 9</div>
+				<img src="./images/thumb/thumbnail_1.png" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">2 / 9</div>
+				<img src="./images/thumb/thumbnail_2.png" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">3 / 9</div>
+				<img src="./images/thumb/thumbnail_3.png" style="width:100%">
+			  </div>
+			  
+			  <div class="mySlides">
+				<div class="numbertext">4 / 9</div>
+				<img src="./images/thumb/thumbnail_4.png" style="width:100%">
+			  </div>
+			    
+			  <div class="mySlides">
+				<div class="numbertext">5 / 9</div>
+				<img src="./images/thumb/thumbnail_5.png" style="width:100%">
+			  </div>
+			    
+			  <div class="mySlides">
+				<div class="numbertext">6 / 9</div>
+				<img src="./images/thumb/thumbnail_6.png" style="width:100%">
+			  </div>
+			    
+			  <div class="mySlides">
+				<div class="numbertext">7 / 9</div>
+				<img src="./images/thumb/thumbnail_7.png" style="width:100%">
+			  </div>
+			    
+			  <div class="mySlides">
+				<div class="numbertext">8 / 9</div>
+				<img src="./images/thumb/thumbnail_8.png" style="width:100%">
+			  </div>
+			    
+			  <div class="mySlides">
+				<div class="numbertext">9 / 9</div>
+				<img src="./images/thumb/thumbnail_9.png" style="width:100%">
+			  </div>
+			  
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  
+			  <div class="caption-container">
+				<p id="caption"></p>
+			  </div>
+		  
+		  
+			  <div class="column">
+				<img class="demo cursor" src="./images/thumb/thumbnail_1.png" style="width:100%" onclick="currentSlide(1)" alt="Setup 1">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/thumb/thumbnail_2.png" style="width:100%" onclick="currentSlide(2)" alt="Setup 2">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/thumb/thumbnail_3.png" style="width:100%" onclick="currentSlide(3)" alt="Setup 3">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/thumb/thumbnail_4.png" style="width:100%" onclick="currentSlide(4)" alt="Setup 4">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/thumb/thumbnail_5.png" style="width:100%" onclick="currentSlide(5)" alt="Setup 5">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/thumb/thumbnail_6.png" style="width:100%" onclick="currentSlide(6)" alt="Setup 6">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/thumb/thumbnail_7.png" style="width:100%" onclick="currentSlide(7)" alt="Setup 7">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/thumb/thumbnail_8.png" style="width:100%" onclick="currentSlide(8)" alt="Setup 8">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/thumb/thumbnail_9.png" style="width:100%" onclick="currentSlide(9)" alt="Setup 9">
+			  </div>
+			</div>
+		  </div>
 		
 		<!-- RSVP -->
 		<section id="contact">
@@ -181,6 +239,8 @@
 				</div>
 			</div>
 	</section>
+	<!--LIGHTBOX END-->
+
 	<!--END RSVP-->
 	
 	<!--FOOTER -->
